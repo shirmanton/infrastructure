@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: robot
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh-authorized-keys: #public-key
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwCz9+ednutuR7C5tQFmFL8zSk6G5MaY/eQtI0uHcVtJ9/TezsYMC8DeyDldVNUeFNhDpWfdpgi4E82uvIh25w/BKBCBoeHnzG54gn4AUbo7u8YIVEH4nLQx49UwXZmqkHm6Fm1Zmtkv4ftrgJDiRWLv9UHL0ugfwBV/HR/6FVQOM/g3+OjGDh6e2kU9S2IdxqwO8T6KlCSBDglZNgjQfZSG5aGwykfB1lKuoY39CAOlxOgnTjLd9iQNxy/tZCn7MSn1Jc8jFrVGoy0vWIwR66rc/mBWJXmM/Z9kDtOs8wKWHCQTSd/+0P04V/YYSJaVQ01YbgEK+310kXTG7m+tNqxCCbjgYQ0ZZIfqpj6SclZlevAlFTD4/i2HLS83d+ik6s8TAWqXzkYbXQ7GfSv0olapoJmPuW03RtLzcxFcLAWichRQzg3f2VXXHksHQT0xIcJtDpmH5De9Xg/t4k4ODBxqDzLtIUzk8CYfy9zfH78YJRbFtJ3by0lE1Ic/YDZHc= robot"
